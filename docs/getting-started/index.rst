@@ -38,17 +38,11 @@ integration of the package or the ``Standalone`` version.
 
              composer require schranz-search/symfony-bundle
              
-             and manually enable the bundle by adding the following line in the config/bundles.php file of your project:
-
-            <?php
-            // config/bundles.php
-
-            return [
-                // ...
+             # and manually enable the bundle by adding the following line in the config/bundles.php file
+             // ...
                 Schranz\Search\Integration\Symfony\SearchBundle::class  => ['all' => true]
-                // ...
-            ];
-
+             // ...
+           
     .. group-tab:: Spiral
 
         If you are using `Spiral <https://spiral.dev/>`_ use the following packages:
