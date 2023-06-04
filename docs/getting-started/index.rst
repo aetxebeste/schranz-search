@@ -37,6 +37,17 @@ integration of the package or the ``Standalone`` version.
         .. code-block:: bash
 
              composer require schranz-search/symfony-bundle
+             
+             and manually enable the bundle by adding the following line in the config/bundles.php file of your project:
+
+            <?php
+            // config/bundles.php
+
+            return [
+                // ...
+                Schranz\Search\Integration\Symfony\SearchBundle::class  => ['all' => true]
+                // ...
+            ];
 
     .. group-tab:: Spiral
 
